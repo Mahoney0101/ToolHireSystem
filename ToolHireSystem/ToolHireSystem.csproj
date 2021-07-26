@@ -1,0 +1,225 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net5.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+		<RootNamespace>WeldSys</RootNamespace>
+		<AssemblyName>WeldSys</AssemblyName>
+
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Azure.Core">
+			<Version>1.16.0</Version>
+		</PackageReference>
+		<PackageReference Include="Azure.Identity">
+			<Version>1.4.0</Version>
+		</PackageReference>
+		<PackageReference Include="EntityFramework">
+			<Version>6.4.4</Version>
+		</PackageReference>
+		<PackageReference Include="Maikebing.System.Windows.Forms.DataVisualization" Version="5.0.1" />
+		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces">
+			<Version>5.0.0</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="3.0.0" />
+		<PackageReference Include="Microsoft.Identity.Client">
+			<Version>4.35.0</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Identity.Client.Extensions.Msal">
+			<Version>2.18.8</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.IdentityModel.JsonWebTokens">
+			<Version>6.12.0</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.IdentityModel.Logging">
+			<Version>6.12.0</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.IdentityModel.Protocols">
+			<Version>6.12.0</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect">
+			<Version>6.12.0</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.IdentityModel.Tokens">
+			<Version>6.12.0</Version>
+		</PackageReference>
+		<PackageReference Include="System.Buffers">
+			<Version>4.5.1</Version>
+		</PackageReference>
+		<PackageReference Include="System.Configuration.ConfigurationManager">
+			<Version>5.0.0</Version>
+		</PackageReference>
+		<PackageReference Include="System.Diagnostics.DiagnosticSource">
+			<Version>5.0.1</Version>
+		</PackageReference>
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt">
+			<Version>6.12.0</Version>
+		</PackageReference>
+		<PackageReference Include="System.Memory">
+			<Version>4.5.4</Version>
+		</PackageReference>
+		<PackageReference Include="System.Numerics.Vectors">
+			<Version>4.5.0</Version>
+		</PackageReference>
+		<PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+			<Version>5.0.0</Version>
+		</PackageReference>
+		<PackageReference Include="System.Security.AccessControl">
+			<Version>5.0.0</Version>
+		</PackageReference>
+		<PackageReference Include="System.Security.Cryptography.ProtectedData">
+			<Version>5.0.0</Version>
+		</PackageReference>
+		<PackageReference Include="System.Security.Permissions">
+			<Version>5.0.0</Version>
+		</PackageReference>
+		<PackageReference Include="System.Security.Principal.Windows">
+			<Version>5.0.0</Version>
+		</PackageReference>
+		<PackageReference Include="System.Text.Encodings.Web">
+			<Version>5.0.1</Version>
+		</PackageReference>
+		<PackageReference Include="System.Text.Json">
+			<Version>5.0.2</Version>
+		</PackageReference>
+		<PackageReference Include="System.Threading.Tasks.Extensions">
+			<Version>4.5.4</Version>
+		</PackageReference>
+		<PackageReference Include="System.ValueTuple">
+			<Version>4.5.0</Version>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Customer.cs" />
+		<Compile Update="DBConnect.cs" />
+		<Compile Update="FrmAddSupply.cs">
+			
+		</Compile>
+		<Compile Update="FrmAddSupply.Designer.cs">
+			<DependentUpon>FrmAddSupply.cs</DependentUpon>
+		</Compile>
+		<Compile Update="FrmTypeAnalysis.cs">
+			
+		</Compile>
+		<Compile Update="FrmTypeAnalysis.Designer.cs">
+			<DependentUpon>FrmTypeAnalysis.cs</DependentUpon>
+		</Compile>
+		<Compile Update="FrmCloseAccount.cs">
+			
+		</Compile>
+		<Compile Update="FrmCloseAccount.Designer.cs">
+			<DependentUpon>FrmCloseAccount.cs</DependentUpon>
+		</Compile>
+		<Compile Update="FrmMainMenu.cs">
+		</Compile>
+		<Compile Update="FrmMainMenu.Designer.cs">
+			<DependentUpon>FrmMainMenu.cs</DependentUpon>
+		</Compile>
+		<Compile Update="FrmOpenAcc.cs">
+		</Compile>
+		<Compile Update="FrmOpenAcc.Designer.cs">
+			<DependentUpon>FrmOpenAcc.cs</DependentUpon>
+		</Compile>
+		<Compile Update="FrmProcessRental.cs">
+		</Compile>
+		<Compile Update="FrmProcessRental.Designer.cs">
+			<DependentUpon>FrmProcessRental.cs</DependentUpon>
+		</Compile>
+		<Compile Update="FrmRentalPayment.cs">
+		</Compile>
+		<Compile Update="FrmRentalPayment.Designer.cs">
+			<DependentUpon>FrmRentalPayment.cs</DependentUpon>
+		</Compile>
+		<Compile Update="FrmReturnRental.cs">
+		</Compile>
+		<Compile Update="FrmReturnRental.Designer.cs">
+			<DependentUpon>FrmReturnRental.cs</DependentUpon>
+		</Compile>
+		<Compile Update="FrmRevenueAnalysis.cs">
+		</Compile>
+		<Compile Update="FrmRevenueAnalysis.Designer.cs">
+			<DependentUpon>FrmRevenueAnalysis.cs</DependentUpon>
+		</Compile>
+		<Compile Update="FrmUpdateAcc.cs">
+		</Compile>
+		<Compile Update="FrmUpdateAcc.Designer.cs">
+			<DependentUpon>FrmUpdateAcc.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Invoice.cs" />
+		<Compile Update="Payment.cs" />
+		<Compile Update="Program.cs" />
+		<Compile Update="Properties\AssemblyInfo.cs" />
+		<Compile Update="FrmRemoveSupply.cs">
+		</Compile>
+		<Compile Update="FrmRemoveSupply.Designer.cs">
+			<DependentUpon>FrmRemoveSupply.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Rental.cs" />
+		<Compile Update="RentalItems.cs" />
+		<Compile Update="Supply.cs" />
+		<Compile Update="FrmUpdateSupply.cs">
+		</Compile>
+		<Compile Update="FrmUpdateSupply.Designer.cs">
+			<DependentUpon>FrmUpdateSupply.cs</DependentUpon>
+		</Compile>
+		<Compile Update="User.cs" />
+		<Compile Update="Validator.cs" />
+		<EmbeddedResource Update="FrmAddSupply.resx">
+			<DependentUpon>FrmAddSupply.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FrmTypeAnalysis.resx">
+			<DependentUpon>FrmTypeAnalysis.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FrmCloseAccount.resx">
+			<DependentUpon>FrmCloseAccount.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FrmMainMenu.resx">
+			<DependentUpon>FrmMainMenu.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FrmOpenAcc.resx">
+			<DependentUpon>FrmOpenAcc.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FrmProcessRental.resx">
+			<DependentUpon>FrmProcessRental.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FrmRentalPayment.resx">
+			<DependentUpon>FrmRentalPayment.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FrmReturnRental.resx">
+			<DependentUpon>FrmReturnRental.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FrmRevenueAnalysis.resx">
+			<DependentUpon>FrmRevenueAnalysis.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FrmUpdateAcc.resx">
+			<DependentUpon>FrmUpdateAcc.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<EmbeddedResource Update="FrmRemoveSupply.resx">
+			<DependentUpon>FrmRemoveSupply.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FrmUpdateSupply.resx">
+			<DependentUpon>FrmUpdateSupply.cs</DependentUpon>
+		</EmbeddedResource>
+		<None Update="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+		<Compile Update="Properties\Settings.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+		</Compile>
+		<None Update="WeldSys_TemporaryKey.pfx" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="App.config" />
+	</ItemGroup>
+</Project>
