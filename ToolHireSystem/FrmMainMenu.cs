@@ -15,21 +15,21 @@ namespace ToolHireSystem
         private void MnuAdd_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmAddSupply nextForm = new FrmAddSupply(this);
+            FrmAddSupply nextForm = new(this);
             nextForm.Show();
         }
 
         private void UpdateSupplyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmUpdateSupply nextForm = new FrmUpdateSupply(this);
+            FrmUpdateSupply nextForm = new(this);
             nextForm.Show();
         }
 
         private void MnuRemove_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmRemoveSupp nextForm = new FrmRemoveSupp(this);
+            FrmRemoveSupp nextForm = new(this);
             nextForm.Show();
         }
 
@@ -41,35 +41,35 @@ namespace ToolHireSystem
         private void OpenAccountToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmOpenAcc nextForm = new FrmOpenAcc(this);
+            FrmOpenAcc nextForm = new(this);
             nextForm.Show();
         }
 
         private void FrmUpdateAccount_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmUpdateAcc nextForm = new FrmUpdateAcc(this);
+            FrmUpdateAcc nextForm = new(this);
             nextForm.Show();
         }
 
         private void FrmCloseAccount_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmCloseAcc nextForm = new FrmCloseAcc(this);
+            FrmCloseAcc nextForm = new(this);
             nextForm.Show();
         }
 
         private void BtnProceRent_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmProcessRental nextForm = new FrmProcessRental(this);
+            FrmProcessRental nextForm = new(this);
             nextForm.Show();
         }
 
         private void BtnReturnRental_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmReturnRental nextForm = new FrmReturnRental(this);
+            FrmReturnRental nextForm = new(this);
             nextForm.Show();
         }
 
@@ -78,21 +78,21 @@ namespace ToolHireSystem
         private void BtnRentalPayment_Click_1(object sender, EventArgs e)
         {
             Hide();
-            FrmRentalPayment nextForm = new FrmRentalPayment(this);
+            FrmRentalPayment nextForm = new(this);
             nextForm.Show();
         }
 
         private void FrmTypeAnal_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmRevenueAnalysis nextForm = new FrmRevenueAnalysis(this);
+            FrmRevenueAnalysis nextForm = new(this);
             nextForm.Show();
         }
 
         private void FrmRevAnal_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmTypeAnalysis nextForm = new FrmTypeAnalysis(this);
+            FrmTypeAnalysis nextForm = new(this);
             nextForm.Show();
         }
 
@@ -137,7 +137,7 @@ namespace ToolHireSystem
             //The Username and Password would have been collected by hte "Register User" function and put throught the ComputeHash() algorithm before saving.
 
         }
-        public string ComputeHash(string input, HashAlgorithm algorithm)
+        public static string ComputeHash(string input, HashAlgorithm algorithm)
         {
             Byte[] inputBytes = Encoding.UTF8.GetBytes(input);
 

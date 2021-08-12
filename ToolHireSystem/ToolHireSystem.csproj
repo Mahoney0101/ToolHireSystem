@@ -217,6 +217,9 @@
 			<DependentUpon>Settings.settings</DependentUpon>
 			<DesignTimeSharedInput>True</DesignTimeSharedInput>
 		</Compile>
+		<None Update="Testing.mdf">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 		<None Update="WeldSys_TemporaryKey.pfx" />
 	</ItemGroup>
 	<ItemGroup>
