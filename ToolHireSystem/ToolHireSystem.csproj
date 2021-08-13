@@ -218,7 +218,7 @@
 			<DesignTimeSharedInput>True</DesignTimeSharedInput>
 		</Compile>
 		<None Update="Testing.mdf">
-		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</None>
 		<None Update="WeldSys_TemporaryKey.pfx" />
 	</ItemGroup>
